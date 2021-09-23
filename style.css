@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(images/bg-intro-mobile.png);
+}
+
+.c-app {
+  display: block;
+  padding: 6rem 1rem 2rem;
+}
+
+.c-hero__title {
+  text-align: center;
+  color: white;
+}
+
+.c-hero__description {
+  display: block;
+  text-align: center;
+  margin: 1rem 0 3rem;
+  line-height: 1.5rem;
+  color: white;
+}
+
+.c-app__pricing {
+  display: block;
+  text-align: center;
+  padding: 1.5rem 4rem;
+  border-radius: 10px;
+  color: white;
+  background-color: hsl(248, 32%, 49%);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.c-free-trial {
+  margin: 1rem 0 0;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.c-free-trial__label {
+  display: none;
+}
+
+.c-free-trial__input {
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: hsl(249, 10%, 26%);
+}
+
+.c-free-trial__warning {
+  color: red;
+  display: block;
+  text-align: center;
+}
+
+.c-free-trial__button {
+  width: 100%;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.c-free-trial__advice {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  color: hsl(246, 25%, 77%);
+}
+
+.c-free-trial__terms {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+}
+
+@media (min-width: 64rem) {
+  body {
+    background-image: url(images/bg-intro-desktop.png);
+  }
+  .c-app {
+    display: flex;
+    padding: 6rem 6rem 4rem;
+  }
+
+  .c-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+
+  .c-hero__title {
+    font-size: 3rem;
+    text-align: left;
+    line-height: 3rem;
+    padding-right: 3rem;
+  }
+
+  .c-hero__description {
+    text-align: left;
+  }
+
+  .s-form {
+    width: 100%;
+  }
+}
